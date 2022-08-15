@@ -17,7 +17,18 @@
                 theme: {
                     extend: {
                         colors: {
-                            
+                            primary: '#5e548e',
+                            secondary: '#118ab2',
+                            darkBg: '#001219',
+                            skyDark: '#005f73',
+                            skySemiDark: '#0a9396',
+                            skyLight: '#94d2bd',
+                            cream: '#e9d8a6',
+                            yellowDark: '#ee9b00',
+                            orangeLight: '#ca6702',
+                            orangeDark: '#bb3e03',
+                            redDark: '#ae2012',
+                            pinkDark: '#ef476f',
                         },
                         fontFamily: {
                             poppins: "'Poppins', sans-serif",
@@ -29,7 +40,26 @@
 
         
     </head>
-    <body class="font-poppins">
-        
+    <body class="font-poppins bg-darkBg">
+        <header>
+            <h1 class="text-4xl font-semibold text-center mt-14 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-pink-500">Welcome to 
+                <span class="font-bold">Baap-Er-Bank</span>
+            </h1>
+        </header>
+
+        <main>
+            <section class="text-slate-200 flex items-center justify-center mt-14">
+                <div class="w-[70%] bg-skyDark p-14 rounded-xl shadow-lg shadow-skyDark/30 flex items-center justify-center">
+                    <div class="w-[60%]">
+                        <h3 class="text-3xl font-semibold mb-5">Please Login</h3>
+                        <div>
+                            <input class="w-full block mb-4 px-3 py-2 rounded-md placeholder:text-gray-500 text-darkBg" type="email" name="" id="" placeholder="Enter Your Email">
+                            <input class="w-full block mb-4 px-3 py-2 rounded-md placeholder:text-gray-500 text-darkBg" type="password" name="" id="" placeholder="Enter Password">
+                            <button class="bg-pinkDark px-6 py-2 rounded-md shadow-lg shadow-pinkDark/30 hover:bg-pinkDark/95">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
