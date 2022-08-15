@@ -12,8 +12,8 @@ btnSubmit.addEventListener('click', () => {
     
     // Step 4: Verify email and password
     if (email === 'jahan@email.com' && password === 'secret') {
-        console.log('Valid Account')
+        window.location.href = 'bank.html'
     } else {
-        console.log('Invalid Account')
+        alert('Enter correct email and password')
     }
 })
