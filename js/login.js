@@ -11,7 +11,7 @@ btnSubmit.addEventListener('click', () => {
     let password = userPassword.value
     
     // Step 4: Verify email and password
-    if (email === 'jahan@email.com' && password === 'secret') {
+    if (email === 'user@email.com' && password === 'secret') {
         window.location.href = 'bank.html'
     } else {
         alert('Enter correct email and password')
